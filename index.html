@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<style>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
 @import url('https://fonts.googleapis.com/css?family=Baloo|Crimson+Text');
 h1:target{
 	animation: dropShadow 1.5s;
@@ -50,19 +50,24 @@ strong{
 	padding: 3px 6px; border-radius: 2px;
 	color: white; text-shadow: 1px 1px #282527;
 }
-	</style>
+@media (max-width: 520px){
+	body{
+		width: 90vw;
+	}
+}
+</style>
 </head>
 <body>	
-<strong>Click on the below links to see the CSS <code>:target</code> animation</strong>
-<div id=links>
-	<a href=#title1>नारंगी</a> <a href=#title2>अमरूद</a> <a href=#title3>अनार</a>
-</div>
-<div class=filler></div>
-<h1 id=title1>नारंगी </h1> <a href="#links">go to links ⬏</a>
-<div class=filler></div>
-<h1 id=title2>अमरूद</h1> <a href="#links">go to links ⬏</a>
-<div class=filler></div>
-<h1 id=title3>अनार</h1> <a href="#links">go to links ⬏</a>
-<div class=filler></div>
+	<strong>Click on the below links to see the CSS <code>:target</code> animation</strong>
+	<div id=links>
+		<a href=#title1>नारंगी</a> <a href=#title2>अमरूद</a> <a href=#title3>अनार</a>
+	</div>
+	<div class=filler></div>
+	<h1 id=title1>नारंगी </h1> <a href="#links">go to links ⬏</a>
+	<div class=filler></div>
+	<h1 id=title2>अमरूद</h1> <a href="#links">go to links ⬏</a>
+	<div class=filler></div>
+	<h1 id=title3>अनार</h1> <a href="#links">go to links ⬏</a>
+	<div class=filler></div>
 </body>
 </html>

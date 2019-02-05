@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+@import url('https://fonts.googleapis.com/css?family=Baloo|Crimson+Text');
+h1:target{
+	animation: dropShadow 1.5s;
+}
+@keyframes dropShadow{
+	50%{
+		color: #fe46ce;
+		text-shadow: 
+			1px 1px #02b1fe,
+			2px 2px #02b1fe,
+			3px 3px #02b1fe,
+			4px 4px #02b1fe,
+			5px 5px #02b1fe;
+	}
+}
+h1{
+	background-image: linear-gradient(to right, #fe46ce, #02b1fe);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	font: 52pt Baloo;
+	margin: 0; line-height: 1.5em;
+
+}
+a{
+	color: #02b1fe;
+	font: bolder 24pt Baloo;
+	margin-right: 20px;
+}
+.filler{
+	height: 1000px;
+	background-image: repeating-linear-gradient(to bottom, lightgrey,  lightgrey 5px, #282527 5px, #282527 20px);
+}
+#links{ margin: 10px auto; }
+body{
+	width: 520px;
+	margin: 60px auto auto auto;
+	background-color: #282527;
+	font: 13pt 'crimson text';
+}
+code{ font-family: courier new; }
+strong{
+	background-image: linear-gradient(to right, #fe46ce, #02b1fe);
+	padding: 3px 6px; border-radius: 2px;
+	color: white; text-shadow: 1px 1px #282527;
+}
+	</style>
+</head>
+<body>	
+<strong>Click on the below links to see the CSS <code>:target</code> animation</strong>
+<div id=links>
+	<a href=#title1>नारंगी</a> <a href=#title2>अमरूद</a> <a href=#title3>अनार</a>
+</div>
+<div class=filler></div>
+<h1 id=title1>नारंगी </h1> <a href="#links">go to links ⬏</a>
+<div class=filler></div>
+<h1 id=title2>अमरूद</h1> <a href="#links">go to links ⬏</a>
+<div class=filler></div>
+<h1 id=title3>अनार</h1> <a href="#links">go to links ⬏</a>
+<div class=filler></div>
+</body>
+</html>
